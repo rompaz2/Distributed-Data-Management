@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<!-- saved from url=(0096)https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.8.dev">
+<meta name="author" content="096224 - Distributed Data Management">
+<title>Project Part II</title>
+<link rel="stylesheet" href="./Project Part II_files/css">
+<style>
+/* Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
+/* Uncomment @import statement to use as custom stylesheet */
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700";*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}
+audio,video{display:inline-block}
+audio:not([controls]){display:none;height:0}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
+a{background:none}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+h1{font-size:2em;margin:.67em 0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+mark{background:#ff0;color:#000}
+code,kbd,pre,samp{font-family:monospace;font-size:1em}
+pre{white-space:pre-wrap}
+q{quotes:"\201C" "\201D" "\2018" "\2019"}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-.5em}
+sub{bottom:-.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:0}
+fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}
+button,input{line-height:normal}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}
+button[disabled],html input[disabled]{cursor:default}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+textarea{overflow:auto;vertical-align:top}
+table{border-collapse:collapse;border-spacing:0}
+*,*::before,*::after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+html,body{font-size:100%}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+a:hover{cursor:pointer}
+img,object,embed{max-width:100%;height:auto}
+object,embed{height:100%}
+img{-ms-interpolation-mode:bicubic}
+.left{float:left!important}
+.right{float:right!important}
+.text-left{text-align:left!important}
+.text-right{text-align:right!important}
+.text-center{text-align:center!important}
+.text-justify{text-align:justify!important}
+.hide{display:none}
+img,object,svg{display:inline-block;vertical-align:middle}
+textarea{height:auto;min-height:50px}
+select{width:100%}
+.center{margin-left:auto;margin-right:auto}
+.stretch{width:100%}
+.subheader,.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{line-height:1.45;color:#7a2518;font-weight:400;margin-top:0;margin-bottom:.25em}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6,pre,form,p,blockquote,th,td{margin:0;padding:0;direction:ltr}
+a{color:#2156a5;text-decoration:underline;line-height:inherit}
+a:hover,a:focus{color:#1d4b8f}
+a img{border:0}
+p{font-family:inherit;font-weight:400;font-size:1em;line-height:1.6;margin-bottom:1.25em;text-rendering:optimizeLegibility}
+p aside{font-size:.875em;line-height:1.35;font-style:italic}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{font-family:"Open Sans","DejaVu Sans",sans-serif;font-weight:300;font-style:normal;color:#ba3925;text-rendering:optimizeLegibility;margin-top:1em;margin-bottom:.5em;line-height:1.0125em}
+h1 small,h2 small,h3 small,#toctitle small,.sidebarblock>.content>.title small,h4 small,h5 small,h6 small{font-size:60%;color:#e99b8f;line-height:0}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+hr{border:solid #dddddf;border-width:1px 0 0;clear:both;margin:1.25em 0 1.1875em;height:0}
+em,i{font-style:italic;line-height:inherit}
+strong,b{font-weight:bold;line-height:inherit}
+small{font-size:60%;line-height:inherit}
+code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;color:rgba(0,0,0,.9)}
+ul,ol,dl{font-size:1em;line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
+ul,ol{margin-left:1.5em}
+ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0;font-size:1em}
+ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
+ul.square{list-style-type:square}
+ul.circle{list-style-type:circle}
+ul.disc{list-style-type:disc}
+ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
+dl dt{margin-bottom:.3125em;font-weight:bold}
+dl dd{margin-bottom:1.25em}
+abbr,acronym{text-transform:uppercase;font-size:90%;color:rgba(0,0,0,.8);border-bottom:1px dotted #ddd;cursor:help}
+abbr{text-transform:none}
+blockquote{margin:0 0 1.25em;padding:.5625em 1.25em 0 1.1875em;border-left:1px solid #ddd}
+blockquote cite{display:block;font-size:.9375em;color:rgba(0,0,0,.6)}
+blockquote cite::before{content:"\2014 \0020"}
+blockquote cite a,blockquote cite a:visited{color:rgba(0,0,0,.6)}
+blockquote,blockquote p{line-height:1.6;color:rgba(0,0,0,.85)}
+@media screen and (min-width:768px){h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2}
+h1{font-size:2.75em}
+h2{font-size:2.3125em}
+h3,#toctitle,.sidebarblock>.content>.title{font-size:1.6875em}
+h4{font-size:1.4375em}}
+table{background:#fff;margin-bottom:1.25em;border:solid 1px #dedede}
+table thead,table tfoot{background:#f7f8f7}
+table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:.5em .625em .625em;font-size:inherit;color:rgba(0,0,0,.8);text-align:left}
+table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
+table tr.even,table tr.alt{background:#f8f8f7}
+table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
+h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
+h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
+.clearfix::before,.clearfix::after,.float-group::before,.float-group::after{content:" ";display:table}
+.clearfix::after,.float-group::after{clear:both}
+:not(pre):not([class^=L])>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+:not(pre)>code.nobreak{word-wrap:normal}
+:not(pre)>code.nowrap{white-space:nowrap}
+pre{color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;line-height:1.45;text-rendering:optimizeSpeed}
+pre code,pre pre{color:inherit;font-size:inherit;line-height:inherit}
+pre>code{display:block}
+pre.nowrap,pre.nowrap pre{white-space:pre;word-wrap:normal}
+em em{font-style:normal}
+strong strong{font-weight:400}
+.keyseq{color:rgba(51,51,51,.8)}
+kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
+.keyseq kbd:first-child{margin-left:0}
+.keyseq kbd:last-child{margin-right:0}
+.menuseq,.menuref{color:#000}
+.menuseq b:not(.caret),.menuref{font-weight:inherit}
+.menuseq{word-spacing:-.02em}
+.menuseq b.caret{font-size:1.25em;line-height:.8}
+.menuseq i.caret{font-weight:bold;text-align:center;width:.45em}
+b.button::before,b.button::after{position:relative;top:-1px;font-weight:400}
+b.button::before{content:"[";padding:0 3px 0 2px}
+b.button::after{content:"]";padding:0 2px 0 3px}
+p a>code:hover{color:rgba(0,0,0,.9)}
+#header,#content,#footnotes,#footer{width:100%;margin-left:auto;margin-right:auto;margin-top:0;margin-bottom:0;max-width:62.5em;*zoom:1;position:relative;padding-left:.9375em;padding-right:.9375em}
+#header::before,#header::after,#content::before,#content::after,#footnotes::before,#footnotes::after,#footer::before,#footer::after{content:" ";display:table}
+#header::after,#content::after,#footnotes::after,#footer::after{clear:both}
+#content{margin-top:1.25em}
+#content::before{content:none}
+#header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
+#header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
+#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:-ms-flexbox;display:-webkit-flex;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap}
+#header .details span:first-child{margin-left:-.125em}
+#header .details span.email a{color:rgba(0,0,0,.85)}
+#header .details br{display:none}
+#header .details br+span::before{content:"\00a0\2013\00a0"}
+#header .details br+span.author::before{content:"\00a0\22c5\00a0";color:rgba(0,0,0,.85)}
+#header .details br+span#revremark::before{content:"\00a0|\00a0"}
+#header #revnumber{text-transform:capitalize}
+#header #revnumber::after{content:"\00a0"}
+#content>h1:first-child:not([class]){color:rgba(0,0,0,.85);border-bottom:1px solid #dddddf;padding-bottom:8px;margin-top:0;padding-top:1rem;margin-bottom:1.25rem}
+#toc{border-bottom:1px solid #e7e7e9;padding-bottom:.5em}
+#toc>ul{margin-left:.125em}
+#toc ul.sectlevel0>li>a{font-style:italic}
+#toc ul.sectlevel0 ul.sectlevel1{margin:.5em 0}
+#toc ul{font-family:"Open Sans","DejaVu Sans",sans-serif;list-style-type:none}
+#toc li{line-height:1.3334;margin-top:.3334em}
+#toc a{text-decoration:none}
+#toc a:active{text-decoration:underline}
+#toctitle{color:#7a2518;font-size:1.2em}
+@media screen and (min-width:768px){#toctitle{font-size:1.375em}
+body.toc2{padding-left:15em;padding-right:0}
+#toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
+#toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
+#toc.toc2>ul{font-size:.9em;margin-bottom:0}
+#toc.toc2 ul ul{margin-left:0;padding-left:1em}
+#toc.toc2 ul.sectlevel0 ul.sectlevel1{padding-left:0;margin-top:.5em;margin-bottom:.5em}
+body.toc2.toc-right{padding-left:0;padding-right:15em}
+body.toc2.toc-right #toc.toc2{border-right-width:0;border-left:1px solid #e7e7e9;left:auto;right:0}}
+@media screen and (min-width:1280px){body.toc2{padding-left:20em;padding-right:0}
+#toc.toc2{width:20em}
+#toc.toc2 #toctitle{font-size:1.375em}
+#toc.toc2>ul{font-size:.95em}
+#toc.toc2 ul ul{padding-left:1.25em}
+body.toc2.toc-right{padding-left:0;padding-right:20em}}
+#content #toc{border-style:solid;border-width:1px;border-color:#e0e0dc;margin-bottom:1.25em;padding:1.25em;background:#f8f8f7;-webkit-border-radius:4px;border-radius:4px}
+#content #toc>:first-child{margin-top:0}
+#content #toc>:last-child{margin-bottom:0}
+#footer{max-width:100%;background:rgba(0,0,0,.8);padding:1.25em}
+#footer-text{color:rgba(255,255,255,.8);line-height:1.44}
+#content{margin-bottom:.625em}
+.sect1{padding-bottom:.625em}
+@media screen and (min-width:768px){#content{margin-bottom:1.25em}
+.sect1{padding-bottom:1.25em}}
+.sect1:last-child{padding-bottom:0}
+.sect1+.sect1{border-top:1px solid #e7e7e9}
+#content h1>a.anchor,h2>a.anchor,h3>a.anchor,#toctitle>a.anchor,.sidebarblock>.content>.title>a.anchor,h4>a.anchor,h5>a.anchor,h6>a.anchor{position:absolute;z-index:1001;width:1.5ex;margin-left:-1.5ex;display:block;text-decoration:none!important;visibility:hidden;text-align:center;font-weight:400}
+#content h1>a.anchor::before,h2>a.anchor::before,h3>a.anchor::before,#toctitle>a.anchor::before,.sidebarblock>.content>.title>a.anchor::before,h4>a.anchor::before,h5>a.anchor::before,h6>a.anchor::before{content:"\00A7";font-size:.85em;display:block;padding-top:.1em}
+#content h1:hover>a.anchor,#content h1>a.anchor:hover,h2:hover>a.anchor,h2>a.anchor:hover,h3:hover>a.anchor,#toctitle:hover>a.anchor,.sidebarblock>.content>.title:hover>a.anchor,h3>a.anchor:hover,#toctitle>a.anchor:hover,.sidebarblock>.content>.title>a.anchor:hover,h4:hover>a.anchor,h4>a.anchor:hover,h5:hover>a.anchor,h5>a.anchor:hover,h6:hover>a.anchor,h6>a.anchor:hover{visibility:visible}
+#content h1>a.link,h2>a.link,h3>a.link,#toctitle>a.link,.sidebarblock>.content>.title>a.link,h4>a.link,h5>a.link,h6>a.link{color:#ba3925;text-decoration:none}
+#content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
+details>summary:first-of-type{cursor:pointer;display:list-item;outline:none;margin-bottom:.75em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{text-rendering:optimizeLegibility;text-align:left;font-family:"Noto Serif","DejaVu Serif",serif;font-size:1rem;font-style:italic}
+table.tableblock.fit-content>caption.title{white-space:nowrap;width:0}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:1.21875em;line-height:1.6;color:rgba(0,0,0,.85)}
+table.tableblock #preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:inherit}
+.admonitionblock>table{border-collapse:separate;border:0;background:none;width:100%}
+.admonitionblock>table td.icon{text-align:center;width:80px}
+.admonitionblock>table td.icon img{max-width:none}
+.admonitionblock>table td.icon .title{font-weight:bold;font-family:"Open Sans","DejaVu Sans",sans-serif;text-transform:uppercase}
+.admonitionblock>table td.content{padding-left:1.125em;padding-right:1.25em;border-left:1px solid #dddddf;color:rgba(0,0,0,.6)}
+.admonitionblock>table td.content>:last-child>:last-child{margin-bottom:0}
+.exampleblock>.content{border-style:solid;border-width:1px;border-color:#e6e6e6;margin-bottom:1.25em;padding:1.25em;background:#fff;-webkit-border-radius:4px;border-radius:4px}
+.exampleblock>.content>:first-child{margin-top:0}
+.exampleblock>.content>:last-child{margin-bottom:0}
+.sidebarblock{border-style:solid;border-width:1px;border-color:#dbdbd6;margin-bottom:1.25em;padding:1.25em;background:#f3f3f2;-webkit-border-radius:4px;border-radius:4px}
+.sidebarblock>:first-child{margin-top:0}
+.sidebarblock>:last-child{margin-bottom:0}
+.sidebarblock>.content>.title{color:#7a2518;margin-top:0;text-align:center}
+.exampleblock>.content>:last-child>:last-child,.exampleblock>.content .olist>ol>li:last-child>:last-child,.exampleblock>.content .ulist>ul>li:last-child>:last-child,.exampleblock>.content .qlist>ol>li:last-child>:last-child,.sidebarblock>.content>:last-child>:last-child,.sidebarblock>.content .olist>ol>li:last-child>:last-child,.sidebarblock>.content .ulist>ul>li:last-child>:last-child,.sidebarblock>.content .qlist>ol>li:last-child>:last-child{margin-bottom:0}
+.literalblock pre,.listingblock>.content>pre{-webkit-border-radius:4px;border-radius:4px;word-wrap:break-word;overflow-x:auto;padding:1em;font-size:.8125em}
+@media screen and (min-width:768px){.literalblock pre,.listingblock>.content>pre{font-size:.90625em}}
+@media screen and (min-width:1280px){.literalblock pre,.listingblock>.content>pre{font-size:1em}}
+.literalblock pre,.listingblock>.content>pre:not(.highlight),.listingblock>.content>pre[class="highlight"],.listingblock>.content>pre[class^="highlight "]{background:#f7f7f8}
+.literalblock.output pre{color:#f7f7f8;background:rgba(0,0,0,.9)}
+.listingblock>.content{position:relative}
+.listingblock code[data-lang]::before{display:none;content:attr(data-lang);position:absolute;font-size:.75em;top:.425rem;right:.5rem;line-height:1;text-transform:uppercase;color:inherit;opacity:.5}
+.listingblock:hover code[data-lang]::before{display:block}
+.listingblock.terminal pre .command::before{content:attr(data-prompt);padding-right:.5em;color:inherit;opacity:.5}
+.listingblock.terminal pre .command:not([data-prompt])::before{content:"$"}
+.listingblock pre.highlightjs{padding:0}
+.listingblock pre.highlightjs>code{padding:1em;-webkit-border-radius:4px;border-radius:4px}
+.listingblock pre.prettyprint{border-width:0}
+.prettyprint{background:#f7f7f8}
+pre.prettyprint .linenums{line-height:1.45;margin-left:2em}
+pre.prettyprint li{background:none;list-style-type:inherit;padding-left:0}
+pre.prettyprint li code[data-lang]::before{opacity:1}
+pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
+table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
+table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
+table.linenotable td.code{padding-left:.75em}
+table.linenotable td.linenos{border-right:1px solid currentColor;opacity:.35;padding-right:.5em}
+pre.pygments .lineno{border-right:1px solid currentColor;opacity:.35;display:inline-block;margin-right:.75em}
+pre.pygments .lineno::before{content:"";margin-right:-.125em}
+.quoteblock{margin:0 1em 1.25em 1.5em;display:table}
+.quoteblock>.title{margin-left:-1.5em;margin-bottom:.75em}
+.quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
+.quoteblock blockquote{margin:0;padding:0;border:0}
+.quoteblock blockquote::before{content:"\201c";float:left;font-size:2.75em;font-weight:bold;line-height:.6em;margin-left:-.6em;color:#7a2518;text-shadow:0 1px 2px rgba(0,0,0,.1)}
+.quoteblock blockquote>.paragraph:last-child p{margin-bottom:0}
+.quoteblock .attribution{margin-top:.75em;margin-right:.5ex;text-align:right}
+.verseblock{margin:0 1em 1.25em}
+.verseblock pre{font-family:"Open Sans","DejaVu Sans",sans;font-size:1.15rem;color:rgba(0,0,0,.85);font-weight:300;text-rendering:optimizeLegibility}
+.verseblock pre strong{font-weight:400}
+.verseblock .attribution{margin-top:1.25rem;margin-left:.5ex}
+.quoteblock .attribution,.verseblock .attribution{font-size:.9375em;line-height:1.45;font-style:italic}
+.quoteblock .attribution br,.verseblock .attribution br{display:none}
+.quoteblock .attribution cite,.verseblock .attribution cite{display:block;letter-spacing:-.025em;color:rgba(0,0,0,.6)}
+.quoteblock.abstract blockquote::before,.quoteblock.excerpt blockquote::before,.quoteblock .quoteblock blockquote::before{display:none}
+.quoteblock.abstract blockquote,.quoteblock.abstract p,.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{line-height:1.6;word-spacing:0}
+.quoteblock.abstract{margin:0 1em 1.25em;display:block}
+.quoteblock.abstract>.title{margin:0 0 .375em;font-size:1.15em;text-align:center}
+.quoteblock.excerpt,.quoteblock .quoteblock{margin:0 0 1.25em;padding:0 0 .25em 1em;border-left:.25em solid #dddddf}
+.quoteblock.excerpt blockquote,.quoteblock.excerpt p,.quoteblock .quoteblock blockquote,.quoteblock .quoteblock p{color:inherit;font-size:1.0625rem}
+.quoteblock.excerpt .attribution,.quoteblock .quoteblock .attribution{color:inherit;text-align:left;margin-right:0}
+table.tableblock{max-width:100%;border-collapse:separate}
+p.tableblock:last-child{margin-bottom:0}
+td.tableblock>.content>:last-child{margin-bottom:-1.25em}
+td.tableblock>.content>:last-child.sidebarblock{margin-bottom:0}
+table.tableblock,th.tableblock,td.tableblock{border:0 solid #dedede}
+table.grid-all>thead>tr>.tableblock,table.grid-all>tbody>tr>.tableblock{border-width:0 1px 1px 0}
+table.grid-all>tfoot>tr>.tableblock{border-width:1px 1px 0 0}
+table.grid-cols>*>tr>.tableblock{border-width:0 1px 0 0}
+table.grid-rows>thead>tr>.tableblock,table.grid-rows>tbody>tr>.tableblock{border-width:0 0 1px}
+table.grid-rows>tfoot>tr>.tableblock{border-width:1px 0 0}
+table.grid-all>*>tr>.tableblock:last-child,table.grid-cols>*>tr>.tableblock:last-child{border-right-width:0}
+table.grid-all>tbody>tr:last-child>.tableblock,table.grid-all>thead:last-child>tr>.tableblock,table.grid-rows>tbody>tr:last-child>.tableblock,table.grid-rows>thead:last-child>tr>.tableblock{border-bottom-width:0}
+table.frame-all{border-width:1px}
+table.frame-sides{border-width:0 1px}
+table.frame-topbot,table.frame-ends{border-width:1px 0}
+table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+th.halign-left,td.halign-left{text-align:left}
+th.halign-right,td.halign-right{text-align:right}
+th.halign-center,td.halign-center{text-align:center}
+th.valign-top,td.valign-top{vertical-align:top}
+th.valign-bottom,td.valign-bottom{vertical-align:bottom}
+th.valign-middle,td.valign-middle{vertical-align:middle}
+table thead th,table tfoot th{font-weight:bold}
+tbody tr th{display:table-cell;line-height:1.6;background:#f7f8f7}
+tbody tr th,tbody tr th p,tfoot tr th,tfoot tr th p{color:rgba(0,0,0,.8);font-weight:bold}
+p.tableblock>code:only-child{background:none;padding:0}
+p.tableblock{font-size:1em}
+ol{margin-left:1.75em}
+ul li ol{margin-left:1.5em}
+dl dd{margin-left:1.125em}
+dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ul.unstyled,ol.unstyled{margin-left:0}
+ul.checklist{margin-left:.625em}
+ul.checklist li>p:first-child>.fa-square-o:first-child,ul.checklist li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
+ul.checklist li>p:first-child>input[type="checkbox"]:first-child{margin-right:.25em}
+ul.inline{display:-ms-flexbox;display:-webkit-box;display:flex;-ms-flex-flow:row wrap;-webkit-flex-flow:row wrap;flex-flow:row wrap;list-style:none;margin:0 0 .625em -1.25em}
+ul.inline>li{margin-left:1.25em}
+.unstyled dl dt{font-weight:400;font-style:normal}
+ol.arabic{list-style-type:decimal}
+ol.decimal{list-style-type:decimal-leading-zero}
+ol.loweralpha{list-style-type:lower-alpha}
+ol.upperalpha{list-style-type:upper-alpha}
+ol.lowerroman{list-style-type:lower-roman}
+ol.upperroman{list-style-type:upper-roman}
+ol.lowergreek{list-style-type:lower-greek}
+.hdlist>table,.colist>table{border:0;background:none}
+.hdlist>table>tbody>tr,.colist>table>tbody>tr{background:none}
+td.hdlist1,td.hdlist2{vertical-align:top;padding:0 .625em}
+td.hdlist1{font-weight:bold;padding-bottom:1.25em}
+.literalblock+.colist,.listingblock+.colist{margin-top:-.5em}
+.colist td:not([class]):first-child{padding:.4em .75em 0;line-height:1;vertical-align:top}
+.colist td:not([class]):first-child img{max-width:none}
+.colist td:not([class]):last-child{padding:.25em 0}
+.thumb,.th{line-height:0;display:inline-block;border:solid 4px #fff;-webkit-box-shadow:0 0 0 1px #ddd;box-shadow:0 0 0 1px #ddd}
+.imageblock.left{margin:.25em .625em 1.25em 0}
+.imageblock.right{margin:.25em 0 1.25em .625em}
+.imageblock>.title{margin-bottom:0}
+.imageblock.thumb,.imageblock.th{border-width:6px}
+.imageblock.thumb>.title,.imageblock.th>.title{padding:0 .125em}
+.image.left,.image.right{margin-top:.25em;margin-bottom:.25em;display:inline-block;line-height:0}
+.image.left{margin-right:.625em}
+.image.right{margin-left:.625em}
+a.image{text-decoration:none;display:inline-block}
+a.image object{pointer-events:none}
+sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
+sup.footnote a,sup.footnoteref a{text-decoration:none}
+sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+#footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
+#footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
+#footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
+#footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
+#footnotes .footnote:last-of-type{margin-bottom:0}
+#content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
+.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
+.gist .file-data>table td.line-data{width:99%}
+div.unbreakable{page-break-inside:avoid}
+.big{font-size:larger}
+.small{font-size:smaller}
+.underline{text-decoration:underline}
+.overline{text-decoration:overline}
+.line-through{text-decoration:line-through}
+.aqua{color:#00bfbf}
+.aqua-background{background:#00fafa}
+.black{color:#000}
+.black-background{background:#000}
+.blue{color:#0000bf}
+.blue-background{background:#0000fa}
+.fuchsia{color:#bf00bf}
+.fuchsia-background{background:#fa00fa}
+.gray{color:#606060}
+.gray-background{background:#7d7d7d}
+.green{color:#006000}
+.green-background{background:#007d00}
+.lime{color:#00bf00}
+.lime-background{background:#00fa00}
+.maroon{color:#600000}
+.maroon-background{background:#7d0000}
+.navy{color:#000060}
+.navy-background{background:#00007d}
+.olive{color:#606000}
+.olive-background{background:#7d7d00}
+.purple{color:#600060}
+.purple-background{background:#7d007d}
+.red{color:#bf0000}
+.red-background{background:#fa0000}
+.silver{color:#909090}
+.silver-background{background:#bcbcbc}
+.teal{color:#006060}
+.teal-background{background:#007d7d}
+.white{color:#bfbfbf}
+.white-background{background:#fafafa}
+.yellow{color:#bfbf00}
+.yellow-background{background:#fafa00}
+span.icon>.fa{cursor:default}
+a span.icon>.fa{cursor:inherit}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note::before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip::before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning::before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution::before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important::before{content:"\f06a";color:#bf0000}
+.conum[data-value]{display:inline-block;color:#fff!important;background:rgba(0,0,0,.8);-webkit-border-radius:100px;border-radius:100px;text-align:center;font-size:.75em;width:1.67em;height:1.67em;line-height:1.67em;font-family:"Open Sans","DejaVu Sans",sans-serif;font-style:normal;font-weight:bold}
+.conum[data-value] *{color:#fff!important}
+.conum[data-value]+b{display:none}
+.conum[data-value]::after{content:attr(data-value)}
+pre .conum[data-value]{position:relative;top:-.125em}
+b.conum *{color:inherit!important}
+.conum:not([data-value]):empty{display:none}
+dt,th.tableblock,td.content,div.footnote{text-rendering:optimizeLegibility}
+h1,h2,p,td.content,span.alt{letter-spacing:-.01em}
+p strong,td.content strong,div.footnote strong{letter-spacing:-.005em}
+p,blockquote,dt,td.content,span.alt{font-size:1.0625rem}
+p{margin-bottom:1.25rem}
+.sidebarblock p,.sidebarblock dt,.sidebarblock td.content,p.tableblock{font-size:1em}
+.exampleblock>.content{background:#fffef7;border-color:#e0e0dc;-webkit-box-shadow:0 1px 4px #e0e0dc;box-shadow:0 1px 4px #e0e0dc}
+.print-only{display:none!important}
+@page{margin:1.25cm .75cm}
+@media print{*{-webkit-box-shadow:none!important;box-shadow:none!important;text-shadow:none!important}
+html{font-size:80%}
+a{color:inherit!important;text-decoration:underline!important}
+a.bare,a[href^="#"],a[href^="mailto:"]{text-decoration:none!important}
+a[href^="http:"]:not(.bare)::after,a[href^="https:"]:not(.bare)::after{content:"(" attr(href) ")";display:inline-block;font-size:.875em;padding-left:.25em}
+abbr[title]::after{content:" (" attr(title) ")"}
+pre,blockquote,tr,img,object,svg{page-break-inside:avoid}
+thead{display:table-header-group}
+svg{max-width:100%}
+p,blockquote,dt,td.content{font-size:1em;orphans:3;widows:3}
+h2,h3,#toctitle,.sidebarblock>.content>.title{page-break-after:avoid}
+#toc,.sidebarblock,.exampleblock>.content{background:none!important}
+#toc{border-bottom:1px solid #dddddf!important;padding-bottom:0!important}
+body.book #header{text-align:center}
+body.book #header>h1:first-child{border:0!important;margin:2.5em 0 1em}
+body.book #header .details{border:0!important;display:block;padding:0!important}
+body.book #header .details span:first-child{margin-left:0!important}
+body.book #header .details br{display:block}
+body.book #header .details br+span::before{content:none!important}
+body.book #toc{border:0!important;text-align:left!important;padding:0!important;margin:0!important}
+body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-break-before:always}
+.listingblock code[data-lang]::before{display:block}
+#footer{padding:0 .9375em}
+.hide-on-print{display:none!important}
+.print-only{display:block!important}
+.hide-for-print{display:none!important}
+.show-for-print{display:inherit!important}}
+@media print,amzn-kf8{#header>h1:first-child{margin-top:1.25rem}
+.sect1{padding:0!important}
+.sect1+.sect1{border:0}
+#footer{background:none}
+#footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
+@media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
+</style>
+<link rel="stylesheet" href="./Project Part II_files/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Project Part II</h1>
+<div class="details">
+<span id="author" class="author">096224 - Distributed Data Management</span><br>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truedata">Data</a>
+<ul class="sectlevel2">
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truedata-format">Data format</a></li>
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#trueaccessing-the-data">Accessing the data</a></li>
+</ul>
+</li>
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#trueassignment">Assignment</a>
+<ul class="sectlevel2">
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#trueextract-transform-load">Extract, Transform, Load</a></li>
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truedata-analysis">Data Analysis</a></li>
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truelearning">Learning</a></li>
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truebonus">Bonus</a></li>
+</ul>
+</li>
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#trueguidelines">Guidelines</a></li>
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truesubmission">Submission</a></li>
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#data_format_appendix">Appendix A: Detailed Data Format</a>
+<ul class="sectlevel2">
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#variables-format">Full Explanation of Variables</a></li>
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#trueflags-format">Flags Format</a></li>
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#ghcnd-station-format">Format of <em>ghcnd-stations</em> file</a></li>
+<li><a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#trueformat-of-ghcnd-inventory-file">Format of <em>ghcnd-inventory</em> file</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="truedata"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truedata"></a>Data</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The data contains daily observations over global land areas. It contains station-based measurements from land-based stations worldwide, about two thirds of which are for precipitation measurements only.</p>
+</div>
+<div class="paragraph">
+<p>The data is a <em>composite</em> of climate records from numerous sources that were merged together and subjected to a common suite of quality assurance reviews (<em>Durre et al., 2010</em>).</p>
+</div>
+<div class="paragraph">
+<p>The data includes the following meteorological variables:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Daily maximum temperature</p>
+</li>
+<li>
+<p>Daily minimum temperature</p>
+</li>
+<li>
+<p>Temperature at the time of observation</p>
+</li>
+<li>
+<p>Precipitation (i.e., rain, melted snow)</p>
+</li>
+<li>
+<p>Snowfall</p>
+</li>
+<li>
+<p>Snow depth</p>
+</li>
+<li>
+<p>Other variables where available</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The data is accompanied by two files, <code>ghcnd-stations.txt</code> and <code>ghcnd-inventory.txt</code>.
+You can get these files here:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://noaa-ghcn-pds.s3.amazonaws.com/ghcnd-stations.txt">ghcnd-stations file</a> contains summary information for over 100,000 stations used to create this dataset.</p>
+</li>
+<li>
+<p>The <a href="http://noaa-ghcn-pds.s3.amazonaws.com/ghcnd-inventory.txt">ghcnd-inventory file</a> contains the periods of record for each station and variable.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="truedata-format"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truedata-format"></a>Data format</h3>
+<div class="paragraph">
+<p>The data is formatted so that every observation (one station-day) is represented by a single row with the following fields:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>StationId</code>: 11 character station identification code. Please see <a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#ghcnd-station-format">Format of <em>ghcnd-stations</em> file</a> section below for an explanation.</p>
+</li>
+<li>
+<p><code>Date</code>: 8 character date in <code>YYYYMMDD</code> format (e.g. <code>19860529</code> = May 29, 1986).</p>
+</li>
+<li>
+<p><code>Variable</code>: 4 character indicator of variable type.</p>
+</li>
+<li>
+<p><code>Value</code>: 5 character data value for the variable.</p>
+</li>
+<li>
+<p><code>M_Flag</code>: 1 character Measurement Flag.</p>
+</li>
+<li>
+<p><code>Q_Flag</code>: 1 character Quality Flag.</p>
+</li>
+<li>
+<p><code>S_Flag</code>: 1 character Source Flag.</p>
+</li>
+<li>
+<p><code>ObsTime</code>: 4 character time of observation in <code>HHmm</code> format (i.e. <code>0700</code> = 7:00 am).</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Detailed data format description is available as <a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#data_format_appendix">appendix</a>.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="sect3">
+<h4 id="truevariables"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truevariables"></a>Variables</h4>
+<div class="paragraph">
+<p>The five core variables are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>PRCP</code>: Precipitation (tenths of mm)</p>
+</li>
+<li>
+<p><code>SNOW</code>: Snowfall (mm)</p>
+</li>
+<li>
+<p><code>SNWD</code>: Snow depth (mm)</p>
+</li>
+<li>
+<p><code>TMAX</code>: Maximum temperature (tenths of degrees C)</p>
+</li>
+<li>
+<p><code>TMIN</code>: Minimum temperature (tenths of degrees C)</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Tenths of degrees means that the value is multiplied by <code>10</code>.
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="trueaccessing-the-data"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#trueaccessing-the-data"></a>Accessing the data</h3>
+<div class="paragraph">
+<p>The data is available through <a href="https://kafka.apache.org/intro">Kafka</a>.<br>
+You can use the following snippet to load the data into Spark as stream:</p>
+</div>
+<div class="listingblock">
+<div class="title">Load Kafka Stream</div>
+<div class="content">
+<pre class="highlightjs highlight nowrap"><code data-lang="python" class="language-python hljs">spark.readStream\
+          .format(<span class="hljs-string">"kafka"</span>)\
+          .option(<span class="hljs-string">"kafka.bootstrap.servers"</span>, YOUR_KAFKA_SERVER)\ <i class="conum" data-value="1"></i><b>(<span class="hljs-number">1</span>)</b>
+          .option(<span class="hljs-string">"subscribe"</span>, <span class="hljs-string">"YOUR_TOPIC1, YOUR_TOPIC2"</span>)\ <i class="conum" data-value="2"></i><b>(<span class="hljs-number">2</span>)</b>
+          .option(<span class="hljs-string">"startingOffsets"</span>, <span class="hljs-string">"earliest"</span>)\ <i class="conum" data-value="3"></i><b>(<span class="hljs-number">3</span>)</b>
+          .load()</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<table>
+<tbody><tr>
+<td><i class="conum" data-value="1"></i><b>1</b></td>
+<td>Kafka Server, The data is available at: <code>dds2020s-kafka.eastus.cloudapp.azure.com:9092</code>.</td>
+</tr>
+<tr>
+<td><i class="conum" data-value="2"></i><b>2</b></td>
+<td><a href="https://kafka.apache.org/intro#intro_topics">Topics</a> to subscribe, each topic represents a FIPS country code (see <a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#ghcnd-station-format">Format of <em>ghcnd-stations</em> file</a>).</td>
+</tr>
+</tbody></table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+For additional configurations of Spark and Kafka integration, please see the <a href="https://spark.apache.org/docs/latest/structured-streaming-kafka-integration.html">documentation</a> (<strong>Deploying</strong> section is a must).
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="trueassignment"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#trueassignment"></a>Assignment</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <em>United Nations Climate Change Conference</em> (UNCC) is interested in predictions of precipitations (<code>PRCP</code>) across the globe, while considering climate changes over time.</p>
+</div>
+<div class="paragraph">
+<p>Your task is to create a model for the conference.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Carefully read the entire task before starting it.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="sect2">
+<h3 id="trueextract-transform-load"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#trueextract-transform-load"></a>Extract, Transform, Load</h3>
+<div class="paragraph">
+<p><span class="small gray"><em>60 Points</em></span></p>
+</div>
+<div class="paragraph">
+<p>Use <em>Spark Streaming</em> to extract the data from the data source.<br>
+If needed, apply transformations on the data. You can enrich, aggregate, filter etc.</p>
+</div>
+<div class="paragraph">
+<p>Finally, load the processed data to your <em>Microsoft</em> SQL Server.<br>
+Depending on your usage (see next tasks), you might want to fragment your data.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Use <a href="https://github.com/microsoft/sql-spark-connector"><em>Spark Connector for SQL Server</em></a> to write your DataFrames directly to your Azure SQL server.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>To help you getting started with Kafka, see the short demo notebook (Moodle).</p>
+</li>
+<li>
+<p>Write clean code! document your functions if needed.</p>
+</li>
+<li>
+<p>Minimal scale is 100 million records to process (from <em>Kafka</em>).</p>
+</li>
+<li>
+<p>Your schema <strong>must</strong> (at least) contain:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>The dependent variable (precipitation).</p>
+</li>
+<li>
+<p>Temporal dimension.</p>
+</li>
+<li>
+<p>Spatial dimension.</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="sect3">
+<h4 id="truewhat-to-submit"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truewhat-to-submit"></a>What to submit?</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><em>Python</em> file (.py) containing all the process you did.</p>
+</li>
+<li>
+<p><em>pdf</em> file containing your data store description and design, please describe your considerations and decisions thoroughly.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="truedata-analysis"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truedata-analysis"></a>Data Analysis</h3>
+<div class="paragraph">
+<p><span class="small gray"><em>15 Points</em></span></p>
+</div>
+<div class="paragraph">
+<p>Derive 3 insights from the data while using your data store:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Temporal based insight (i.e, an insight that utilize the <em>time</em> dimension).</p>
+</li>
+<li>
+<p>Spatial based insight (i.e, an insight that utilize the <em>space</em> dimension).</p>
+</li>
+<li>
+<p>Spatio-temporal based insight.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Use visualizations where applicable (:</p>
+</div>
+<div class="sect3">
+<h4 id="truewhat-to-submit-2"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truewhat-to-submit-2"></a>What to submit?</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Your analysis process. submit <em>Jupyter</em> notebook (<em>html\pdf</em> and <em>ipynb</em> files) containing your analysis and explanations (use <a href="https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html"><em>Markdown cells</em></a> to write text).</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="truelearning"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truelearning"></a>Learning</h3>
+<div class="paragraph">
+<p><span class="small gray"><em>25 Points</em></span></p>
+</div>
+<div class="paragraph">
+<p>Build a Machine Learning model which utilizes the data from your data store.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Recall that the task is to predict the dependent variable (precipitation).</p>
+</li>
+<li>
+<p>Define your training set and testing set (from your data store).</p>
+</li>
+<li>
+<p>Create (build and train) a model using <em>Spark MLlib</em>.</p>
+</li>
+<li>
+<p>Evaluate your model using <a href="https://en.wikipedia.org/wiki/Root-mean-square_deviation"><em>RMSE</em></a> (on train and test sets), if possible, through visualizations (:</p>
+</li>
+</ol>
+</div>
+<div class="sect3">
+<h4 id="truewhat-to-submit-3"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truewhat-to-submit-3"></a>What to submit?</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><em>pdf</em> file containing your learning task description.</p>
+</li>
+<li>
+<p><em>Jupyter</em> notebook (<em>html\pdf</em> and <em>ipynb</em> files).</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="truebonus"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truebonus"></a>Bonus</h3>
+<div class="paragraph">
+<p><span class="small gray"><em>10 Points</em></span></p>
+</div>
+<div class="paragraph">
+<p>Build your own learning task! :</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Define a new learning task over the data in you collected (note that you can design it to accommodate this task).</p>
+</li>
+<li>
+<p>Define your training set and testing set (from your data store).</p>
+</li>
+<li>
+<p>Create (build and train) a model using <em>Spark MLlib</em>.</p>
+</li>
+<li>
+<p>Define your evaluation metric and report your results\evaluation, if possible, through visualizations (:</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="trueguidelines"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#trueguidelines"></a>Guidelines</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Use <em>Spark</em> 2.4.</p>
+</li>
+<li>
+<p>Design your code on your local machine, use small samples to avoid long iterations.</p>
+</li>
+<li>
+<p>To execute your code over the full scale of data, you will have access to a <em>Spark</em> computation cluster (cloud). Specific instructions will be available soon.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="truesubmission"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truesubmission"></a>Submission</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Follow specific submission instruction for each task.<br>
+Please follow this file naming convention: <code>&lt;TASK&gt;_&lt;ID1&gt;_&lt;ID2&gt;_&lt;ID3&gt;</code>.</p>
+</li>
+<li>
+<p>Submission will be done via Moodle until 17/08/2021.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="data_format_appendix"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#data_format_appendix"></a>Appendix A: Detailed Data Format</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="variables-format"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#variables-format"></a>Full Explanation of Variables</h3>
+<div class="paragraph">
+<p>As mentioned above the five core variables are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>PRCP</code>: Precipitation (tenths of mm)</p>
+</li>
+<li>
+<p><code>SNOW</code>: Snowfall (mm)</p>
+</li>
+<li>
+<p><code>SNWD</code>: Snow depth (mm)</p>
+</li>
+<li>
+<p><code>TMAX</code>: Maximum temperature (tenths of degrees C)</p>
+</li>
+<li>
+<p><code>TMIN</code>: Minimum temperature (tenths of degrees C)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The other variables are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>ACMC</code>: Average cloudiness midnight to midnight from 30-second ceilometer data (percent)</p>
+</li>
+<li>
+<p><code>ACMH</code>: Average cloudiness midnight to midnight from manual observations (percent)</p>
+</li>
+<li>
+<p><code>ACSC</code>: Average cloudiness sunrise to sunset from 30-second ceilometer data (percent)</p>
+</li>
+<li>
+<p><code>ACSH</code>: Average cloudiness sunrise to sunset from manual observations (percent)</p>
+</li>
+<li>
+<p><code>AWDR</code>: Average daily wind direction (degrees)</p>
+</li>
+<li>
+<p><code>AWND</code>: Average daily wind speed (tenths of meters per second)</p>
+</li>
+<li>
+<p><code>DAEV</code>: Number of days included in the multiday evaporation total (MDEV)</p>
+</li>
+<li>
+<p><code>DAPR</code>: Number of days included in the multiday precipitation total (MDPR)</p>
+</li>
+<li>
+<p><code>DASF</code>: Number of days included in the multiday snowfall total (MDSF)</p>
+</li>
+<li>
+<p><code>DATN</code>: Number of days included in the multiday minimum temperature (MDTN)</p>
+</li>
+<li>
+<p><code>DATX</code>: Number of days included in the multiday maximum temperature (MDTX)</p>
+</li>
+<li>
+<p><code>DAWM</code>: Number of days included in the multiday wind movement (MDWM)</p>
+</li>
+<li>
+<p><code>DWPR</code>: Number of days with non-zero precipitation included in multiday precipitation total (MDPR)</p>
+</li>
+<li>
+<p><code>EVAP</code>: Evaporation of water from evaporation pan (tenths of mm)</p>
+</li>
+<li>
+<p><code>FMTM</code>: Time of fastest mile or fastest 1-minute wind (hours and minutes,i.e., HHMM)</p>
+</li>
+<li>
+<p><code>FRGB</code>: Base of frozen ground layer (cm)</p>
+</li>
+<li>
+<p><code>FRGT</code>: Top of frozen ground layer (cm)</p>
+</li>
+<li>
+<p><code>FRTH</code>: Thickness of frozen ground layer (cm)</p>
+</li>
+<li>
+<p><code>GAHT</code>: Difference between river and gauge height (cm)</p>
+</li>
+<li>
+<p><code>MDEV</code>: Multiday evaporation total (tenths of mm; use with DAEV)</p>
+</li>
+<li>
+<p><code>MDPR</code>: Multiday precipitation total (tenths of mm; use with DAPR and DWPR, if available)</p>
+</li>
+<li>
+<p><code>MDSF</code>: Multiday snowfall total</p>
+</li>
+<li>
+<p><code>MDTN</code>: Multiday minimum temperature (tenths of degrees C; use with DATN)</p>
+</li>
+<li>
+<p><code>MDTX</code>: Multiday maximum temperature (tenths of degrees C; use with DATX)</p>
+</li>
+<li>
+<p><code>MDWM</code>: Multiday wind movement (km)</p>
+</li>
+<li>
+<p><code>MNPN</code>: Daily minimum temperature of water in an evaporation pan (tenths of degrees C)</p>
+</li>
+<li>
+<p><code>MXPN</code>: Daily maximum temperature of water in an evaporation pan (tenths of degrees C)</p>
+</li>
+<li>
+<p><code>PGTM</code>: Peak gust time (hours and minutes, i.e., HHMM)</p>
+</li>
+<li>
+<p><code>PSUN</code>: Daily percent of possible sunshine (percent)</p>
+</li>
+<li>
+<p><code>SN*#</code>: Minimum soil temperature (tenths of degrees C) where:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>*</code> corresponds to a code for ground cover</p>
+</li>
+<li>
+<p><code>0</code>: unknown</p>
+</li>
+<li>
+<p><code>1</code>: grass</p>
+</li>
+<li>
+<p><code>2</code>: fallow</p>
+</li>
+<li>
+<p><code>3</code>: bare ground</p>
+</li>
+<li>
+<p><code>4</code>: brome grass</p>
+</li>
+<li>
+<p><code>5</code>: sod</p>
+</li>
+<li>
+<p><code>6</code>: straw mulch</p>
+</li>
+<li>
+<p><code>7</code>: grass muck</p>
+</li>
+<li>
+<p><code>8</code>: bare muck</p>
+</li>
+<li>
+<p><code>#</code> corresponds to a code for soil depth.</p>
+</li>
+<li>
+<p><code>1</code>: 5 cm</p>
+</li>
+<li>
+<p><code>2</code>: 10 cm</p>
+</li>
+<li>
+<p><code>3</code>: 20 cm</p>
+</li>
+<li>
+<p><code>4</code>: 50 cm</p>
+</li>
+<li>
+<p><code>5</code>: 100 cm</p>
+</li>
+<li>
+<p><code>6</code>: 150 cm</p>
+</li>
+<li>
+<p><code>7</code>: 180 cm</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>SX*#</code>: Maximum soil temperature (tenths of degrees C) where:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>*</code> corresponds to a code for ground cover (see above)</p>
+</li>
+<li>
+<p><code>#</code> corresponds to a code for soil depth (see above)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>TAVG</code>: Average temperature (tenths of degrees C) [Note that TAVG from source ’S’ corresponds to an average for the period ending at 2400 UTC rather than local midnight]</p>
+</li>
+<li>
+<p><code>THIC</code>: Thickness of ice on water (tenths of mm)</p>
+</li>
+<li>
+<p><code>TOBS</code>: Temperature at the time of observation (tenths of degrees C)</p>
+</li>
+<li>
+<p><code>TSUN</code>: Daily total sunshine (minutes)</p>
+</li>
+<li>
+<p><code>WDF1</code>: Direction of fastest 1-minute wind (degrees)</p>
+</li>
+<li>
+<p><code>WDF2</code>: Direction of fastest 2-minute wind (degrees)</p>
+</li>
+<li>
+<p><code>WDF5</code>: Direction of fastest 5-second wind (degrees)</p>
+</li>
+<li>
+<p><code>WDFG</code>: Direction of peak wind gust (degrees)</p>
+</li>
+<li>
+<p><code>WDFI</code>: Direction of highest instantaneous wind (degrees)</p>
+</li>
+<li>
+<p><code>WDFM</code>: Fastest mile wind direction (degrees)</p>
+</li>
+<li>
+<p><code>WDMV</code>: 24-hour wind movement (km)</p>
+</li>
+<li>
+<p><code>WESD</code>: Water equivalent of snow on the ground (tenths of mm)</p>
+</li>
+<li>
+<p><code>WESF</code>: Water equivalent of snowfall (tenths of mm)</p>
+</li>
+<li>
+<p><code>WSF1</code>: Fastest 1-minute wind speed (tenths of meters per second)</p>
+</li>
+<li>
+<p><code>WSF2</code>: Fastest 2-minute wind speed (tenths of meters per second)</p>
+</li>
+<li>
+<p><code>WSF5</code>: Fastest 5-second wind speed (tenths of meters per second)</p>
+</li>
+<li>
+<p><code>WSFG</code>: Peak gust wind speed (tenths of meters per second)</p>
+</li>
+<li>
+<p><code>WSFI</code>: Highest instantaneous wind speed (tenths of meters per second)</p>
+</li>
+<li>
+<p><code>WSFM</code>: Fastest mile wind speed (tenths of meters per second)</p>
+</li>
+<li>
+<p><code>WT**</code>: Weather Type where ** has one of the following values:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>01</code>: Fog, ice fog, or freezing fog (may include heavy fog)</p>
+</li>
+<li>
+<p><code>02</code>: Heavy fog or heaving freezing fog (not always distinguished from fog)</p>
+</li>
+<li>
+<p><code>03</code>: Thunder</p>
+</li>
+<li>
+<p><code>04</code>: Ice pellets, sleet, snow pellets, or small hail</p>
+</li>
+<li>
+<p><code>05</code>: Hail (may include small hail)</p>
+</li>
+<li>
+<p><code>06</code>: Glaze or rime</p>
+</li>
+<li>
+<p><code>07</code>: Dust, volcanic ash, blowing dust, blowing sand, or blowing obstruction</p>
+</li>
+<li>
+<p><code>08</code>: Smoke or haze</p>
+</li>
+<li>
+<p><code>09</code>: Blowing or drifting snow</p>
+</li>
+<li>
+<p><code>10</code>: Tornado, waterspout, or funnel cloud</p>
+</li>
+<li>
+<p><code>11</code>: High or damaging winds</p>
+</li>
+<li>
+<p><code>12</code>: Blowing spray</p>
+</li>
+<li>
+<p><code>13</code>: Mist</p>
+</li>
+<li>
+<p><code>14</code>: Drizzle</p>
+</li>
+<li>
+<p><code>15</code>: Freezing drizzl</p>
+</li>
+<li>
+<p><code>16</code>: Rain (may include freezing rain, drizzle, and freezing drizzle)</p>
+</li>
+<li>
+<p><code>17</code>: Freezing rain</p>
+</li>
+<li>
+<p><code>18</code>: Snow, snow pellets, snow grains, or ice crystals</p>
+</li>
+<li>
+<p><code>19</code>: Unknown source of precipitation</p>
+</li>
+<li>
+<p><code>21</code>: Ground fog</p>
+</li>
+<li>
+<p><code>22</code>: Ice fog or freezing fog</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>WV**</code>: Weather in the Vicinity where ** has one of the following values:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>01</code>: Fog, ice fog, or freezing fog (may include heavy fog)</p>
+</li>
+<li>
+<p><code>03</code>: Thunder</p>
+</li>
+<li>
+<p><code>07</code>: Ash, dust, sand, or other blowing obstruction</p>
+</li>
+<li>
+<p><code>18</code>: Snow or ice crystals</p>
+</li>
+<li>
+<p><code>20</code>: Rain or snow shower</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="trueflags-format"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#trueflags-format"></a>Flags Format</h3>
+<div class="sect3">
+<h4 id="truem-flag"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#truem-flag"></a>M-Flag</h4>
+<div class="paragraph">
+<p>M-Flag is the measurement flag. There are ten possible values:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>&lt;blank&gt;</code>: no measurement information applicable</p>
+</li>
+<li>
+<p><code>B</code>: precipitation total formed from two 12-hour totals</p>
+</li>
+<li>
+<p><code>D</code>: precipitation total formed from four six-hour totals</p>
+</li>
+<li>
+<p><code>H</code>: represents highest or lowest hourly temperature (TMAX or TMIN) or the average of hourly values (TAVG)</p>
+</li>
+<li>
+<p><code>K</code>: converted from knots</p>
+</li>
+<li>
+<p><code>L</code>: temperature appears to be lagged with respect to reported hour of observation</p>
+</li>
+<li>
+<p><code>O</code>: converted from oktas</p>
+</li>
+<li>
+<p><code>P</code>: identified as “missing presumed zero” in DSI 3200 and 3206</p>
+</li>
+<li>
+<p><code>T</code>: trace of precipitation, snowfall, or snow depth</p>
+</li>
+<li>
+<p><code>W</code>: converted from 16-point WBAN code (for wind direction)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="trueq-flag"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#trueq-flag"></a>Q-Flag</h4>
+<div class="paragraph">
+<p>Q-Flag is the measurement quality flag. There are fourteen possible
+values:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>&lt;blank&gt;</code>: did not fail any quality assurance check</p>
+</li>
+<li>
+<p><code>D</code>: failed duplicate check</p>
+</li>
+<li>
+<p><code>G</code>: failed gap check</p>
+</li>
+<li>
+<p><code>I</code>: failed internal consistency check</p>
+</li>
+<li>
+<p><code>K</code>: failed streak/frequent-value check</p>
+</li>
+<li>
+<p><code>L</code>: failed check on length of multiday period</p>
+</li>
+<li>
+<p><code>M</code>: failed mega consistency check</p>
+</li>
+<li>
+<p><code>N</code>: failed naught check</p>
+</li>
+<li>
+<p><code>O</code>: failed climatological outlier check</p>
+</li>
+<li>
+<p><code>R</code>: failed lagged range check</p>
+</li>
+<li>
+<p><code>S</code>: failed spatial consistency check</p>
+</li>
+<li>
+<p><code>T</code>: failed temporal consistency check</p>
+</li>
+<li>
+<p><code>W</code>: temperature too warm for snow</p>
+</li>
+<li>
+<p><code>X</code>: failed bounds check</p>
+</li>
+<li>
+<p><code>Z</code>: flagged as a result of an official Datzilla Investigation</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="trues-flag"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#trues-flag"></a>S-Flag</h4>
+<div class="paragraph">
+<p>S-Flag is the source flag for the observation. There are twenty nine
+possible values (including blank, upper and lower case letters):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>&lt;blank&gt;</code>: No source (i.e., data value missing)</p>
+</li>
+<li>
+<p><code>0</code>: U.S. Cooperative Summary of the Day (NCDC DSI-3200)</p>
+</li>
+<li>
+<p><code>6</code>: CDMP Cooperative Summary of the Day (NCDC DSI-3206)</p>
+</li>
+<li>
+<p><code>7</code>: U.S. Cooperative Summary of the Day – Transmitted via WxCoder3 (NCDC SI-3207)</p>
+</li>
+<li>
+<p><code>A</code>: U.S. Automated Surface Observing System (ASOS) real-time data (since January 1, 2006)</p>
+</li>
+<li>
+<p><code>a</code>: Australian data from the Australian Bureau of Meteorology</p>
+</li>
+<li>
+<p><code>B</code>: U.S. ASOS data for October 2000-December 2005 (NCDC DSI-3211)</p>
+</li>
+<li>
+<p><code>b</code>: Belarus update</p>
+</li>
+<li>
+<p><code>C</code>: Environment Canada</p>
+</li>
+<li>
+<p><code>E</code>: European Climate Assessment and Dataset (Klein Tank et al., 2002)</p>
+</li>
+<li>
+<p><code>F</code>: U.S. Fort data</p>
+</li>
+<li>
+<p><code>G</code>: Official Global Climate Observing System (GCOS) or other government-supplied data</p>
+</li>
+<li>
+<p><code>H</code>: High Plains Regional Climate Center real-time data</p>
+</li>
+<li>
+<p><code>I</code>: International collection (non U.S. data received through personal contacts)</p>
+</li>
+<li>
+<p><code>K</code>: U.S. Cooperative Summary of the Day data digitized from paper observer forms (from 2011 to present)</p>
+</li>
+<li>
+<p><code>M</code>: Monthly METAR Extract (additional ASOS data)</p>
+</li>
+<li>
+<p><code>N</code>: Community Collaborative Rain, Hail,and Snow (CoCoRaHS)</p>
+</li>
+<li>
+<p><code>Q</code>: Data from several African countries that had been “quarantined”, that is, withheld from public release until permission was granted from the respective meteorological services</p>
+</li>
+<li>
+<p><code>R</code>: NCEI Reference Network Database (Climate Reference Network and Regional Climate Reference Network)</p>
+</li>
+<li>
+<p><code>r</code>: All-Russian Research Institute of Hydro-meteorological Information-World Data Center</p>
+</li>
+<li>
+<p><code>S</code>: Global Summary of the Day (NCDC DSI-9618)NOTE: “S” values are derived from hourly synoptic reports exchanged on the Global Telecommunications System (GTS). Daily values derived in this fashion may differ significantly from “true” daily data, particularly for precipitation (i.e., use with caution).</p>
+</li>
+<li>
+<p><code>s</code>: China Meteorological Administration/National Meteorological Information Center/Climatic Data Center (<a href="http://cdc.cma.gov.cn/">http://cdc.cma.gov.cn</a>)</p>
+</li>
+<li>
+<p><code>T</code>: SNOwpack TELemtry (SNOTEL) data obtained from the U.S. Department of Agriculture’s Natural Resources Conservation Service.</p>
+</li>
+<li>
+<p><code>U</code>: Remote Automatic Weather Station (RAWS) data obtained from the Western Regional Climate Center</p>
+</li>
+<li>
+<p><code>u</code>: Ukraine update</p>
+</li>
+<li>
+<p><code>W</code>: WBAN/ASOS Summary of the Day from NCDC’s Integrated Surface Data (ISD).</p>
+</li>
+<li>
+<p><code>X</code>: U.S. First-Order Summary of the Day (NCDC DSI-3210)</p>
+</li>
+<li>
+<p><code>Z</code>: Datzilla official additions or replacements</p>
+</li>
+<li>
+<p><code>z</code>: Uzbekistan update</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+When data is available for the same time from more than one source, the
+highest priority source is chosen according to the following priority
+order (from highest to lowest): <code>Z</code> → <code>R</code> → <code>0</code> → <code>6</code> → <code>C</code> → <code>X</code> → <code>W</code> → <code>K</code> → <code>7</code> → <code>F</code> → <code>B</code> → <code>M</code> → <code>r</code> → <code>E</code> → <code>z</code> → <code>u</code> → <code>b</code> → <code>s</code> → <code>a</code> → <code>G</code> → <code>Q</code> → <code>I</code> → <code>A</code> → <code>N</code> → <code>T</code> → <code>U</code> → <code>H</code> → <code>S</code>.
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ghcnd-station-format"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#ghcnd-station-format"></a>Format of <em>ghcnd-stations</em> file</h3>
+<div class="paragraph">
+<p>There are over 100,000 stations listed in the file.<br>
+The table below describes the structure of each row of <code>ghcnd-stations.txt</code>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Variable</th>
+<th class="tableblock halign-left valign-top">Columns</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0-11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Character</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EI000003980</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LATITUDE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13-20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">55.3717</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LONGITUDE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">22-30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-7.3400</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ELEVATION</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32-37</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">21.0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">STATE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">39-40</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Character</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">NAME</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">42-71</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Character</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">MALIN HEAD</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GSN FLAG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">73-75</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Character</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GSN</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">HCN/CRN FLAG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">77-79</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Character</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">WMO ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">81-85</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Character</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">03980</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonitionblock tip">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The file format is a fixed-width format. In fixed width format each variable has a fixed width in characters. There is no delimiter.
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="paragraph">
+<p>These variables have the following definitions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>ID</code>: the station identification code.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The first two characters denote the FIPS country code</p>
+</li>
+<li>
+<p>The third character is a network code that identifies the station numbering system used</p>
+</li>
+<li>
+<p><code>0</code>: unspecified (station identified by up to eight alphanumeric characters)</p>
+</li>
+<li>
+<p><code>1</code>: Community Collaborative Rain, Hail,and Snow (CoCoRaHS) based identification number. To ensure consistency with with GHCN Daily, all numbers in the original CoCoRaHS IDs have been left-filled to make them
+all four digits long. In addition, the characters “-” and “_” have been removed to ensure that the IDs do not exceed 11 characters when preceded by “US1”. For example, the CoCoRaHS ID “AZ-MR-156” becomes “US1AZMR0156”
+in GHCN-Daily</p>
+</li>
+<li>
+<p><code>C</code>: U.S. Cooperative Network identification number (last six characters of the GHCN-Daily ID)</p>
+</li>
+<li>
+<p><code>E</code>: Identification number used in the ECA&amp;D non-blended dataset</p>
+</li>
+<li>
+<p><code>M</code>: World Meteorological Organization ID (last five characters of the GHCN-Daily ID)</p>
+</li>
+<li>
+<p><code>N</code>: Identification number used in data supplied by a National Meteorological or Hydrological Center</p>
+</li>
+<li>
+<p><code>R</code>: U.S. Interagency Remote Automatic Weather Station (RAWS) identifier</p>
+</li>
+<li>
+<p><code>S</code>: U.S. Natural Resources Conservation Service SNOwpack TELemtry (SNOTEL) station identifier</p>
+</li>
+<li>
+<p><code>W</code>: WBAN identification number (last five characters of the GHCN-Daily ID)</p>
+</li>
+<li>
+<p>The remaining eight characters contain the actual station ID.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>LATITUDE</code>: latitude of the station (in decimal degrees).</p>
+</li>
+<li>
+<p><code>LONGITUDE</code>: longitude of the station (in decimal degrees).</p>
+</li>
+<li>
+<p><code>STATE</code>: U.S. postal code for the state (for U.S. and Canadian stations only).</p>
+</li>
+<li>
+<p><code>NAME</code>: name of the station.</p>
+</li>
+<li>
+<p><code>GSN FLAG</code>: flag that indicates whether the station is part of the GCOS Surface Network (GSN). The flag is assigned by cross-referencing the number in the WMOID field with the official list of GSN stations. There are two possible values:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>&lt;blank&gt;</code>: non-GSN station or WMO Station number not available</p>
+</li>
+<li>
+<p><code>GSN</code>: GSN station</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>HCN/CRN FLAG</code>: flag that indicates whether the station is part of the U.S. Historical Climatology Network (HCN). There are three possible values:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>&lt;blank&gt;</code>: Not a member of the U.S. Historical Climatology or U.S. Climate Reference Networks</p>
+</li>
+<li>
+<p><code>HCN</code>: U.S. Historical Climatology Network station</p>
+</li>
+<li>
+<p><code>CRN</code>: U.S. Climate Reference Network or U.S. Regional Climate Network Station</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>WMO ID</code>: World Meteorological Organization (WMO) number for the station. If the station has no WMO number (or one has not yet been matched to this station), then the field is blank.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="trueformat-of-ghcnd-inventory-file"><a class="anchor" href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#trueformat-of-ghcnd-inventory-file"></a>Format of <em>ghcnd-inventory</em> file</h3>
+<div class="paragraph">
+<p>This is a file listing the periods of record for each station and variable.<br>
+The file structure is described in the table below.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Variable</th>
+<th class="tableblock halign-left valign-top">Columns</th>
+<th class="tableblock halign-left valign-top">Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1-11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CHARACTER</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LATITUDE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13-20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">REAL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LONGITUDE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">22-30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">REAL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VARIABLE</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32-35</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CHARACTER</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FIRSTYEAR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">37-40</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INTEGER</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LASTYEAR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">42-45</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">INTEGER</p></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p><code>ID</code>: the station identification code. Please see <code>ghcnd-stations.txt</code> for a complete list of stations and their metadata.</p>
+</li>
+<li>
+<p><code>LATITUDE</code>: the latitude of the station (in decimal degrees).</p>
+</li>
+<li>
+<p><code>LONGITUDE</code>: the longitude of the station (in decimal degrees).</p>
+</li>
+<li>
+<p><code>VARIABLE</code>: the variable type. See <a href="https://moodle.technion.ac.il/pluginfile.php/1679940/mod_resource/content/5/Project_Part_II.html#variables-format">Full Explanation of Variables</a> for a definition of variables.</p>
+</li>
+<li>
+<p><code>FIRSTYEAR</code>: the first year of unflagged data for the given variable.</p>
+</li>
+<li>
+<p><code>LASTYEAR</code>: the last year of unflagged data for the given variable .</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<link rel="stylesheet" href="./Project Part II_files/github.min.css">
+<script src="./Project Part II_files/highlight.min.js.הורדה"></script>
+<script>hljs.initHighlighting()</script>
+
+</body></html>
